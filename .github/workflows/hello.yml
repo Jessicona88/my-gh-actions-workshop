@@ -15,7 +15,8 @@ jobs:
       #- run: ls -l
       #- uses: actions/checkout@v5
       #- run: ls -l
+      # Print 1. env var and 2. default env var
       - name: Run a multi-line script
         run: |
-          echo "Hello $MY_ENV"
+          echo "Hello $MY_ENV" 
           echo "Hello $GITHUB_ACTOR"
